@@ -10,8 +10,11 @@ const GetAllWeather=()=>{
         <>
         <div>
            <h1>
-               arrray
+               json values
            </h1>
+           {
+               JSON.stringify(weatherList)
+           }
            
            
         </div>
