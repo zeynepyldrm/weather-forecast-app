@@ -1,11 +1,11 @@
-import { GetAllWeather } from "./components/API/getAllWeather";
+import { GetAllWeather } from "./components/API/GetAllWeather";
 import { WeatherProvider } from "./context/WeatherContext";
 
 function App() {
   return (
+
       <WeatherProvider>
-        <GetAllWeather>
-        </GetAllWeather>
+        <GetAllWeather/>
       </WeatherProvider>
   );
 }
