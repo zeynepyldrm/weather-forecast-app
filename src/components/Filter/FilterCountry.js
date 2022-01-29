@@ -16,10 +16,10 @@ const FilterCountry = () => {
     return (
         <>
             <form>
-                <div class="pseudo-search">
-                    <input type="text" placeholder="Search..." autofocus required value={country} onChange={handleChange} />
-                    <i class="fa fa-globe places"></i>
-                    <button class="fa fa-search" type="submit"></button>
+                <div className="pseudo-search">
+                    <input type="text" placeholder="Search..." autoFocus required value={country} onChange={handleChange} />
+                    <i className="fa fa-globe places"></i>
+                    <button className="fa fa-search" type="submit"></button>
                 </div>
 
             </form>

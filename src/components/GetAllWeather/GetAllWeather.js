@@ -28,7 +28,7 @@ const GetAllWeather = () => {
                         if (e % 7 === 0) {
                             //console.log(weatherList[e]["weather"][0].main)
                             return (
-                                <WeatherCard day={gunler[dt.getDay()]} temp={weatherList[e]["main"].temp} icon={weatherList[e]["weather"][0].main} />
+                                <WeatherCard key={e} day={gunler[dt.getDay()]} temp={weatherList[e]["main"].temp} icon={weatherList[e]["weather"][0].main} />
                             )
                         }
                         else {

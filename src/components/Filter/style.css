@@ -1,13 +1,13 @@
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
 
 body {
-  margin-top: 10%;
-  margin-left: 10%;
+
 }
 
 form {
   display: inline-block;
-  margin-left: -50px;
+  margin-left: 50px;
+  margin-top:50px;
 }
 
 .pseudo-search {
