@@ -1,0 +1,40 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+
+body {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+form {
+  display: inline-block;
+  margin-left: -50px;
+}
+
+.pseudo-search {
+  display: inline;
+  border: 2px solid #ccc;
+  border-radius: 100px;
+  padding: 10px 15px;
+  transition: background-color 0.5 ease-in-out;
+}
+input {
+  border: 0;
+  background-color: transparent;
+  width: 200px;
+
+  
+}
+input:focus {
+    outline: 0;
+}
+
+button,
+i {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+select {
+  border: none;
+}

@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    margin-left: -50px;
 }
 
 .weather-card {
@@ -52,7 +52,7 @@ body {
     
     p {
         position: absolute;
-        font-family: 'Lato', sans-serif;
+       
         font-weight:300;
         font-size:28px;
         color: lighten($color3, 10%);
@@ -72,7 +72,7 @@ body {
     animation: weather-icon-move 5s ease-in-out infinite;
 }
 
-.sun { 
+.Clear { 
     background: $color4; 
 	border-radius: 50%; 
 	box-shadow: rgba(255,255,0,0.1) 0 0 0 4px;
@@ -147,6 +147,7 @@ body {
     
     
     &:after {
+
         border-radius: 10px;
         background-color: transparent;
         width: 4px;
