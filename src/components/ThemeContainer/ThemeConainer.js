@@ -1,5 +1,6 @@
 import { useWeather } from "../../context/WeatherContext";
 import FilterCountry from "../Filter/FilterCountry"
+import { Footer } from "../Footer/Footer";
 import { GetAllWeather } from "../GetAllWeather/GetAllWeather"
 
 import './theme.css';
@@ -30,6 +31,7 @@ const ThemeContainer = () => {
             </label>
             <FilterCountry />
             <GetAllWeather />
+            <Footer/>
         </div>
 
     )
