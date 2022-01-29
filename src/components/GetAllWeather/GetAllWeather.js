@@ -10,26 +10,8 @@ const defaultValues = [];
 const GetAllWeather = () => {
 
     const { weatherList, weatherData } = useWeather();
-
-    Object.keys(weatherList).forEach(e => {
-        defaultValues["day" + e] = [
-            { "temp": weatherList[e]["main"].temp },
-            { "min_temp": weatherList[e]["main"].temp_min },
-            { "temp_max": weatherList[e]["main"].temp_max },
-
-        ]
-    });
     var gunler = ["Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"];
-    var dtPast;
-    var seen = [];
 
-
-    function getUniqueListBy(arr, key) {
-        return [...new Map(arr.map(item => [item[key], item])).values()]
-    }
-    
-    const arr1 = getUniqueListBy(weatherList,'dt_txt');
-                        console.log(arr1)
 
     return (
         <>
@@ -47,20 +29,19 @@ const GetAllWeather = () => {
                 {
 
                     weatherList.map((item, e) => {
+                        // console.log(e);
+
                         var dt = new Date(weatherList[e].dt_txt);
-                        
-                        var cur = weatherList[e].dt_txt;
-                        if (cur in seen) {
-                            e+=3;
-                        }
-                        else {
-                            seen.push(cur)
+                        var cur = dt.toDateString();
+                        console.log(weatherList[e]["weather"][0].main)
+                        if (e %7 === 0) {
                             return (
-                                <WeatherCard day={gunler[dt.getDay()]} temp={weatherList[e]["main"].temp} />
+                                <WeatherCard day={gunler[dt.getDay()]} temp={weatherList[e]["main"].temp} icon={weatherList[e]["weather"][0].main} />
                             )
                         }
-
-
+                        else{
+                            console.log(e)
+                        }
                     }
                     )
                 }
@@ -68,7 +49,7 @@ const GetAllWeather = () => {
 
 
                 <div class="weather-card">
-                    <div class="weather-icon cloud"></div>
+                    <div class="weather-icon Clouds"></div>
                     <h1>14º</h1>
                     <div>
                         <p>Pazartesi</p>

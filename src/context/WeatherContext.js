@@ -13,9 +13,9 @@ const WeatherProvider=({children})=>{
     const [country, setCountry] = useState("istanbul");
 
     const getWeatherList=async(country)=>{
-        await axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${country}&lang=tr&units=metric&cnt=7&appid=d4e0334629486ad76dfc53766e2a015e`)
+        await axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${country}&lang=tr&units=metric&cnt=49&appid=d4e0334629486ad76dfc53766e2a015e`)
         .then(req=>setWeather(req.data.list))
-        .catch((err)=>console.log(err));
+        .catch((err)=>console.log(err))
     }
 
     useEffect(() => {
