@@ -1,6 +1,6 @@
 # Weather Forecast App
 
-A simple weather widget app built with React.js using the OpenWeatherMap API
+A simple weather widget app built with React.js running the OpenWeatherMap API
 
 ![image](public/animation.gif) 
 
